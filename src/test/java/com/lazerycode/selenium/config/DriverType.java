@@ -22,7 +22,7 @@ public enum DriverType implements DriverSetup {
 
     FIREFOX {
         public RemoteWebDriver getWebDriverObject(DesiredCapabilities capabilities) {
-            System.setProperty("webdriver.gecko.driver", "/home/vu.thi.tran.van/Training/AutomationTest/selenium/Sources/Selenium-Maven-Template-master/src/test/resources/selenium_standalone_binaries/linux/marionette/64bit/geckodriver");
+            System.setProperty("webdriver.gecko.driver", "*****/64bit/geckodriver");
             FirefoxOptions options = new FirefoxOptions();
             options.merge(capabilities);
             options.setHeadless(HEADLESS);
@@ -31,7 +31,7 @@ public enum DriverType implements DriverSetup {
     },
     CHROME {
         public RemoteWebDriver getWebDriverObject(DesiredCapabilities capabilities) {
-            System.setProperty("webdriver.chrome.driver", "/home/vu.thi.tran.van/Training/AutomationTest/selenium/Sources/Selenium-Maven-Template-master/src/test/resources/selenium_standalone_binaries/linux/googlechrome/64bit/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "*****/64bit/chromedriver");
             HashMap<String, Object> chromePreferences = new HashMap<>();
             chromePreferences.put("profile.password_manager_enabled", false);
 
@@ -78,7 +78,7 @@ public enum DriverType implements DriverSetup {
     },
     OPERA {
         public RemoteWebDriver getWebDriverObject(DesiredCapabilities capabilities) {
-            System.setProperty("webdriver.opera.driver", "/home/vu.thi.tran.van/Training/AutomationTest/selenium/Sources/Selenium-Maven-Template-master/src/test/resources/selenium_standalone_binaries/linux/operachromium/64bit/operadriver");
+            System.setProperty("webdriver.opera.driver", "*****/64bit/operadriver");
             OperaOptions options = new OperaOptions();
             options.merge(capabilities);
 
